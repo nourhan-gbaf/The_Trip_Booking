@@ -41,25 +41,32 @@
 
 <body>
 
-    <header >
-        <nav class="d-flex container justify-between align-items-center flex-row">
-            <div class="logo-div align-items-center d-flex justify-between">
-                <img class="logo" src="/assets/homePage/homePage01.webp" height="55">
-            </div>      
-            <button>
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="links text-black txt-bold">
-                <a href="index.html" rel="noopener noreferrer" class="">Home</a>
+    <header>
+        <nav class="d-flex container justify-between align-items-center">
+
+        <div class="logo-div">
+        <img class="logo" src="/assets/homePage/homePage01.webp" height="55">
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <div class="links text-black txt-bold">
+                <a href="index.html" rel="noopener noreferrer" >Home</a>
                 <a href="tourPachages.html" rel="noopener noreferrer" class="Tour-Packages">Tour Packages</a>
-                <a href="excursions.html" rel="noopener noreferrer" class="Excursions ">Excursions</a>
+                <a href="excursions.html" rel="noopener noreferrer" class="Excursions">Excursions</a>
                 <a href="tailorATour.html" rel="noopener noreferrer" class="Tailor-a-Tour">Tailor a Tour</a>
                 <a href="Blog.html" rel="noopener noreferrer" class="Blog">Blog</a>
                 <a href="contact.html" rel="noopener noreferrer" class="active">Contact</a>
                 <a href="about.html" rel="noopener noreferrer" class="">About</a>
-            </div>
+        </div>
+
         </nav>
-    </header> 
+    </header>
 
     <main>
 
@@ -77,12 +84,12 @@
                 <br>
                 <h2 class="hear-txt web-color ">We like to hear from you</h2>
                 <br> 
-                <div class="hear d-flex  ">
+                <div class="hear d-flex-contact  ">
                     <div class="form">
                         <form>
                             <label>Full Name</label> <br>  
                             <input class="fullname" type="name" placeholder="Enter your full name!"> <br> <br>
-                            <div class="email-phone d-flex gap-label">
+                            <div class="email-phone d-flex-contact gap-label">
                                 <div class="email">
                                     <label>E-mail</label> <br>
                                     <input class="email-input" type="email" placeholder="Enter your e-mail!"> 
@@ -95,7 +102,7 @@
                             
                             </div>
 
-                            <div class="country-nationality d-flex gap-label">
+                            <div class="country-nationality d-flex-contact gap-label">
                                 <div class="country">
                                     <label>Country</label> <br>
                                     <select class="country-input">
@@ -146,7 +153,9 @@
                     <div class="how-contact">
                         <h2 class="how-contact-txt txt-bold web-color "> How to contact us</h2>
                         <p class="desc-contact">Whenever you need us, we're here for you. We're here to help and answer any inquiries or questions you might have about travel in Egypt, we look forward to hearing from you.</p>
-                        <div class="address d-flex gap-label">
+                        
+                        <div class="how-contact-details">
+                            <div class="address d-flex-contact gap-label">
                             <i class="icon-contact web-color fa-solid fa-location-dot"></i>
                             <div>
                                 <span>Address</span>
@@ -155,8 +164,7 @@
 
                         </div> <br> <br>
 
-                        <div class="how-contact-details">
-                            <div class="email d-flex gap-label">
+                            <div class="email d-flex-contact gap-label">
                                 <i class="icon-contact web-color fa-regular fa-envelope"></i>
                                 <div>
                                     <span>Email</span>
@@ -165,7 +173,7 @@
                             </div> <br> <br>
                                     
                                 
-                            <div class="phone d-flex gap-label">
+                            <div class="phone d-flex-contact gap-label">
                                 <i class=" icon-contact web-color fa-solid fa-phone"></i>
                                 <div>
                                     <span>Phone</span>
@@ -174,7 +182,7 @@
                             </div>   
                         </div>    
                         <div class="container">
-                            <div class="social-icons d-flex  justify-content-center">
+                            <div class="social-icons d-flex-contact  justify-content-center">
                                 <a href="#" class="text-white bg-dark-blue d-flex align-items-center justify-content-center">
                                     <i class="social-icon fa-brands fa-facebook-f"></i>
                                 </a>
@@ -259,7 +267,7 @@
                 <li><a href="excursions.html">Excursions</a></li>
                 <li><a href="tailorATour.html">Tailor a Tour</a></li>
                 <li><a href="Blog.html">Blog</a></li>
-                <li><a href="contact.html" >Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
             </div>
 
@@ -267,7 +275,7 @@
             <div class="footer-col">
             <h3>Information</h3> <br>
             <ul>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="about.html" >About</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#why-choose">Why Choose Us</a></li>
                 <li><a href="#">Privacy Policy</a></li>

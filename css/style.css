@@ -98,9 +98,28 @@ nav button:has(i){
     border: none;
     cursor: pointer;
 }
-nav button:hover + .links{
-    display: block;
-    background-color: var(--white);
+nav i:hover{
+    color: var(--orange);
+}
+#menu-toggle{
+display:none;
+}
+
+.menu-icon .fa-xmark{
+display:none;
+}
+
+#menu-toggle:checked + .menu-icon .fa-bars{
+display:none;
+}
+
+#menu-toggle:checked + .menu-icon .fa-xmark{
+display:inline;
+}
+
+#menu-toggle:checked ~ .links{
+display:block;
+background: #eee;
 }
 .txt-bold{
     font-weight: bold;
@@ -446,14 +465,15 @@ nav .links{
 }
 
 .footer img{
-    width:  4.5vw;
+    width:  25%;
+    margin: auto;
        height: 8.5vh; 
-       padding-bottom: 10px;
        
+       transform: translate(-50%,-50%);
     }
 
 .footer p {
-  font-size: 14px;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: #cbd5e1;
 }
@@ -587,7 +607,11 @@ nav .links{
         justify-content: center;
     }
 }
-
+@media (max-width: 550px){
+    .footer-col img{
+        transform: translate(7%,-50%);
+    }
+}
 /*Top Info*/
 .top-info-container {
   display: grid;

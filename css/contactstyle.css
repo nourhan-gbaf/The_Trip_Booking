@@ -8,7 +8,9 @@
     width: 50%;
 }
 
-
+.d-flex-contact{
+    display: flex;
+}
 
 .in-touch .hear-txt{
     margin-top: 1.5rem;
@@ -54,11 +56,11 @@
 
                     /* ====Form Style=== */
 .fullname{
-    width: 700px;
-    height: 45px;
+    width: 43.75rem;
+    height: 2.8125rem;
     border-radius: 10px;
     border: 1px rgba(194, 71, 71, 0.685) solid;
-    padding: 15px;
+    padding: .9375rem;
 }
 .email-phone,
 .country-nationality {
@@ -71,38 +73,38 @@
 .email-phone input,
 .country-nationality select {
     flex: 1 1 200px; /* flexible width, min 200px */
-    min-width: 150px; /* so it doesn't get too small */
+    min-width: 9.375rem; /* so it doesn't get too small */
 }
 
 .gap-label{
     gap: 10px;
 }
 .email-phone input , .country-nationality select{
-    width: 345px;
-    height: 45px;
+    width: 21.5625rem;
+    height: 2.8125rem;
     border-radius: 10px;
     border: 1px rgba(194, 71, 71, 0.685) solid;
-    padding: 15px;
+    padding: .9375rem;
 }
 input:focus, textarea:focus, select:focus{
     outline: none;
 }
 textarea{
-    height: 136px;
-    width: 700px;
+    height: 8.5rem;
+    width: 43.75rem;
     border-radius: 10px;
     border: 1px rgba(194, 71, 71, 0.685) solid;
-    padding: 15px;
+    padding: .9375rem;
 }
 label{
-    padding: 15px;
+    padding: .9375rem;
 }
 
 
                     /* ====How Contact Div start=== */
 .how-contact-txt{
-    font-size: 25px;
-    margin-bottom: 20px;
+    font-size: 1.5625rem;
+    margin-bottom: 1.25rem;
 }
 .how-contact h2{
     font-size: 1.25rem;
@@ -119,8 +121,8 @@ label{
     display: block;
 }
 .desc-contact{
-    font-size: 20px;
-    margin-bottom: 25px;
+    font-size: 1.25rem;
+    margin-bottom: 1.5625rem;
 }
 .icon-contact{
     font-size: 2rem;
@@ -138,8 +140,8 @@ label{
     color: var(--orange);
 }
 .socials{
-    padding-top: 15px;
-    margin: 35px;
+    padding-top: .9375rem;
+    margin: 2.1875rem;
 }
 .icon-circle{
     width: 50px;
@@ -188,7 +190,7 @@ label{
 /* -------- Tablet / Small Desktop -------- */
 @media (max-width: 1024px){
     /* show items vertically instead of row */
-    .d-flex{
+    .d-flex-contact{
         flex-direction: column;
         gap: 30px;
     }

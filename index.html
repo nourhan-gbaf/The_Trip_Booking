@@ -47,22 +47,29 @@
 <body>
 
     <header>
-        <nav class="d-flex container justify-between align-items-center flex-row">
-            <div class="logo-div align-items-center d-flex justify-between">
-                <img class="logo" src="/assets/homePage/homePage01.webp" height="55">
-            </div>
-            <button>
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="links text-black txt-bold">
+        <nav class="d-flex container justify-between align-items-center">
+
+        <div class="logo-div">
+        <img class="logo" src="/assets/homePage/homePage01.webp" height="55">
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <div class="links text-black txt-bold">
                 <a href="index.html" rel="noopener noreferrer" class="active">Home</a>
                 <a href="tourPachages.html" rel="noopener noreferrer" class="Tour-Packages">Tour Packages</a>
                 <a href="excursions.html" rel="noopener noreferrer" class="Excursions">Excursions</a>
                 <a href="tailorATour.html" rel="noopener noreferrer" class="Tailor-a-Tour">Tailor a Tour</a>
                 <a href="Blog.html" rel="noopener noreferrer" class="Blog">Blog</a>
-                <a href="contact.html" rel="noopener noreferrer" class="">Contact</a>
+                <a href="contact.html" rel="noopener noreferrer" >Contact</a>
                 <a href="about.html" rel="noopener noreferrer" class="">About</a>
-            </div>
+        </div>
+
         </nav>
     </header>
 
@@ -351,7 +358,7 @@
             <div class="footer-col">
                 <h3>Quick Links</h3> <br>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html"class="active">Home</a></li>
                     <li><a href="tourPachages.html">Tour Packages</a></li>
                     <li><a href="excursions.html">Excursions</a></li>
                     <li><a href="tailorATour.html">Tailor a Tour</a></li>
@@ -364,7 +371,7 @@
             <div class="footer-col">
                 <h3>Information</h3> <br>
                 <ul>
-                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="about.html" >About</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#why-choose">Why Choose Us</a></li>
                     <li><a href="#">Privacy Policy</a></li>
